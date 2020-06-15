@@ -1,0 +1,5 @@
+(Before this, go to Edit->Segements->Rebase program and set start address to 0)
+
+1. Find function in ida pro (pro top-text search for a print statement or something related to what you want)
+2. Lets say ur func is inside of the main function. Click on the actual function, then press Ctrl-P then Enter to find the start address of the function. You should see the prototype of your function around where the start address is (Then press N. That's the address of your function relative to the moduleBaseAddress, which you get with GetModuleHandle).
+3. Know prototype of the func (you should be going in and defining everything) You should then use this video to do the coding if you forgot where it is https://www.youtube.com/watch?v=jmgwFpVnRmU
